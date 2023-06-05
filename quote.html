@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Gym Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: url('https://www.shutterstock.com/image-photo/wooden-footbridge-on-lake-mist-260nw-1238469448.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+    h1 {
+        text-align: center;
+      }
+    </style>
+    <style>
+        .quote-container {
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          padding: 20px;
+          background-color: #f2f2f2;
+          border: 1px solid #ddd;
+        }
+    
+        .quote-text {
+          font-size: 24px;
+          font-weight: bold;
+        }
+    
+        .quote-author {
+          margin-top: 10px;
+          font-style: italic;
+        }
+      </style>
+      <script>
+        // Array of quotes and authors
+        var quotes = [
+          { text: "IN THE MIDDLE OF DIFFICULTY LIES OPPORTUNITY", author: "Albert Einstein" },
+          { text: "All art is a kind of confession", author: "James Baldwin" },
+          { text: "The future belongs to those who believe in the beauty of their dreams", author: "Eleanor Roosevelt" }
+          // Add more quotes as needed
+        ];
+    
+        // Function to get a random quote from the array
+        function getRandomQuote() {
+          var index = Math.floor(Math.random() * quotes.length);
+          return quotes[index];
+        }
+    
+        // Function to update the quote content
+        function updateQuote() {
+          var quote = getRandomQuote();
+          document.getElementById("quote-text").textContent = quote.text;
+          document.getElementById("quote-author").textContent = "- " + quote.author;
+        }
+    
+        // Update the quote on page load
+        window.onload = updateQuote;
+      </script>
+    
+</head>
+<body>
+    <header><!-- <img src="C:\Users\shank\OneDrive\Desktop\motivation\logo.png.jpeg" height="300" alt="Logo"> -->
+        <nav>
+            <div class="logo">
+                <!-- <h1>Motivation</h1> -->
+            </div>
+            <img src="logo2.jpeg"  alt="Logo" class="small-logo"class="left-image">
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="authors.html">authors</a></li>
+                <li><a href="topics.html">topics</a></li>
+                <li><a href="quote.html">today quote</a></li>
+            </ul>
+            <!-- <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn Profile">
+              </a> -->
+        </nav>
+    </header>
+
+  <h1>today Quote</h1>
+  <div class="quote-container">
+    <p id="quote-text" class="quote-text"></p>
+    <p id="quote-author" class="quote-author"></p>
+  </div>
+  <!-- <ul>
+    <li>Personal Training</li>
+    <li>Group Classes</li>
+    <li>Cardio Equipment</li>
+    <li>Weight Training</li>
+    <li>Aerial Yoga</li>
+    <li>zumba aerobics</li>
+    <li>Group Exercise</li>
+    <li>Cycling.</li>
+    
+  </ul> -->
+ 
+
+ <!-- Rest of the services page content -->
+
+</body>
+</html>
